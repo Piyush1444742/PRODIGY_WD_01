@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Website</title>
+    <link rel="stylesheet" href="Task1.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div class="nav-left">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <div class="logo">Magic</div>
+        </div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="section light">
+        <h2>Welcome to Magic...</h2>
+        <p>
+            Where creativity meets technology. Explore our world of web design, development, and digital excellence.
+        </p>
+        <br>
+        <h2>Scroll to watch Magic!</h2>
+    </section>
+
+    <section id="about" class="section dark">
+        <h2>About Us</h2>
+        <p>We create beautiful websites with modern design practices.At Magic , we are passionate about creating
+            beautiful, responsive, and high-performance websites that reflect both creativity and functionality. Our
+            team of designers and developers is dedicated to transforming ideas into visually engaging and user-friendly
+            digital experiences. We follow modern design practices, keep up with the latest technologies, and focus on
+            delivering clean, elegant, and efficient solutions for businesses of all sizes.</p>
+    </section>
+
+    <section id="services" class="section light">
+        <h2>Services</h2>
+        <p>Our services include web design, development, and branding.Our expertise spans custom web design, where we
+            craft visually stunning and user-friendly interfaces, web development, where we build fast, secure, and
+            responsive websites using the latest technologies, and branding solutions that help define your identity and
+            connect with your audience. Whether you need a sleek portfolio site, a full-scale e-commerce platform, or a
+            complete brand refresh, we deliver creative and strategic solutions that drive results.
+        </p>
+    </section>
+
+    <section id="contact" class="section dark">
+        <h2>Contact</h2>
+        <p>Reach out to us for collaborations and inquiries.
+            <br>
+            Email - student@gmail.com
+        </p>
+    </section>
+
+    <script>
+        // Scroll behavior for nav styling
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+
+</html>
